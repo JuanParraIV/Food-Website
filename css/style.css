@@ -40,6 +40,22 @@ body{
     background: #f7f7f7;
 }
 
+section{
+    padding: 2rem 9%;
+    
+}
+
+.heading{
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 1rem;
+    color: #666;
+
+}
+.heading span{
+    color: var(--red);
+}
+
 
 .btn{
     display: inline-block;
@@ -87,21 +103,17 @@ body{
 
 header{
     position: fixed;
-    top: 0; left: 0; right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: #fff;
     padding: 2rem 9%;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
 
-
-section{
-    padding: 2rem 9%;
-    
-}
 
 
 header .logo{
@@ -159,12 +171,12 @@ header .navbar a:hover{
 
 .home .content h3{
     font-size: 5rem;
-    color: #666;
+    color: #333;
 }
 
 .home .content p{
-    font-size: 2.5rem;
-    
+    font-size: 1.7rem;
+    padding: 1rem 0;
     color: #666;
 
 }
@@ -182,6 +194,64 @@ header .navbar a:hover{
 }
 
 
+.speciality .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+
+.speciality .box-container .box{
+    flex: 1 1 30rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    border: .1rem solid rgba(0,0,0,.3);
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+.speciality .box-container .box .images{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: -100%; left: 0;
+}
+
+.speciality .box-container .box .content{
+    text-align: center;
+    background: #fff;
+    padding: 2rem;
+    font-size: 3rem;
+}
+
+.speciality .box-container .box .content img{
+    margin: 1.5rem 0;
+}
+
+.speciality .box-container .box .content h3{
+    font-size: 2.5rem;
+    color:#333;
+}
+
+.speciality .box-container .box .content p{
+    font-size: 1.6rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.speciality .box-container .box:hover .images{
+    top:0;
+}
+.speciality .box-container .box:hover .content{
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+}
+
 
 @keyframes float{
     0%,100%{
@@ -197,7 +267,7 @@ header .navbar a:hover{
         -moz-transform: translateY(3rem);
         -ms-transform: translateY(3rem);
         -o-transform: translateY(3rem);
-}
+    }
 }
 
 
