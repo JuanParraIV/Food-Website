@@ -540,6 +540,31 @@ header .navbar a:hover{
 }
 
 
+#scroll-top{
+    position: fixed;
+    top: calc(-120%);
+    right: 2rem;
+    padding: .5rem 1.5rem;
+    font-size: 4rem;
+    background: var(--red);
+    color: #fff;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    transition: 1s linear;
+    -webkit-transition: 1s linear;
+    -moz-transition: 1s linear;
+    -ms-transition: 1s linear;
+    -o-transition: 1s linear;
+}
+
+#scroll-top.active{
+    top: calc(100% - 12rem);
+}
+
+
 
 
 
